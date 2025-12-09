@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unit Converter</title>
+</head>
+<body>
+
+    <h2>Unit Converter</h2>
+
+    <form action="/convert" method="post">
+
+        <label>Enter value :</label>
+        <input type="number" name="value" step="any" required><br><br>
+
+        <label>Select conversion</label>
+        <select name="type">
+            <option value="kmToM">Kilometer → Meter</option>
+            <option value="mToKm">Meter → Kilometer</option>
+            <option value="kgTog">Kilogram -> Gram</option>
+            <option value="gTokg">Gram → Kilogram</option>
+        </select>
+        <br><br>
+        <button type="submit">Convert</button>
+    </form>
+
+</body>
+</html>
